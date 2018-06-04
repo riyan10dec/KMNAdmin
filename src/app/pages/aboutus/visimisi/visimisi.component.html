@@ -1,0 +1,26 @@
+
+    <nb-card>
+        <nb-card-header>
+          Visi &amp; Misi
+        </nb-card-header>
+        <nb-card-body>
+            <h3>Visi</h3>
+          <ckeditor 
+          [(ngModel)]="visi"
+          [config]="{ 
+              extraPlugins: 'divarea', 
+              height: '200'
+            }"></ckeditor>
+            <br/> <br/>
+            <h3>Misi</h3>
+          <ckeditor 
+          [(ngModel)]="misi"
+          [config]="{ 
+              extraPlugins: 'divarea', 
+              height: '200'
+            }"></ckeditor>
+        </nb-card-body>
+        <nb-card-footer>
+            <button type="button" (click)="update()" class="btn btn-success">Send</button>
+        </nb-card-footer>
+      </nb-card>

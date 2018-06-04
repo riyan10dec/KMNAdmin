@@ -1,0 +1,45 @@
+
+    <nb-card>
+        <nb-card-header>
+          Suku Bunga
+        </nb-card-header>
+        <nb-card-body>
+            <h3>Simpanan</h3>
+          <ckeditor 
+          [(ngModel)]="sukubunga.description"
+          [config]="{ 
+              extraPlugins: 'divarea', 
+              height: '400'
+            }"></ckeditor>
+            
+            <br/> <br/>
+            <h3>Simpanan Berjangka</h3>
+          <ckeditor 
+          [(ngModel)]="sukubunga2.description"
+          [config]="{ 
+              extraPlugins: 'divarea', 
+              height: '400' 
+            }"></ckeditor>
+
+            <br/> <br/>
+            <h3>Simpanan Berjangka Platinum</h3>
+          <ckeditor 
+          [(ngModel)]="sukubunga3.description"
+          [config]="{ 
+              extraPlugins: 'divarea', 
+              height: '400' 
+            }"></ckeditor>
+
+            <br/> <br/>
+            <h3>Pinjaman</h3>
+          <ckeditor 
+          [(ngModel)]="sukubunga4.description"
+          [config]="{ 
+              extraPlugins: 'divarea', 
+              height: '400' 
+            }"></ckeditor>
+        </nb-card-body>
+        <nb-card-footer>
+            <button type="button" (click)="update()" class="btn btn-success">Send</button>
+        </nb-card-footer>
+      </nb-card>
