@@ -1,0 +1,31 @@
+<nb-card>
+    <nb-card-header>Footer</nb-card-header>
+    <nb-card-body>
+        <!-- <div class="input-group fbicon">
+            <input type="text" [(ngModel)]="fblink" placeholder="Facebook Link" class="form-control"/>
+        </div> -->
+        <div class="input-group liicon">
+            <input type="text" [(ngModel)]="lilink" placeholder="LinkedIn Link" class="form-control"/>
+        </div>
+        <div class="input-group emailicon">
+            <input type="text" [(ngModel)]="email" placeholder="Email" class="form-control"/>
+        </div>
+        <div class="input-group phoneicon">
+            <input type="text" [(ngModel)]="phone" placeholder="Phone" class="form-control"/>
+        </div>
+        <div class="input-group faxicon">
+            <input type="text" [(ngModel)]="fax" placeholder="Fax" class="form-control"/>
+        </div>
+        
+        <ckeditor 
+        [(ngModel)]="address"
+        [config]="{ 
+            extraPlugins: 'divarea', 
+            height: '150' ,
+           allowedContent: 'false'
+          }"></ckeditor>
+    </nb-card-body>
+    <nb-card-footer>
+            <button type="button" (click)="update()" class="btn btn-success">Save</button>
+    </nb-card-footer>
+</nb-card>

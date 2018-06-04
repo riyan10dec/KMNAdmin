@@ -1,0 +1,18 @@
+
+    <nb-card>
+        <nb-card-header>
+          Tentang Kami
+        </nb-card-header>
+        <nb-card-body>
+          <ckeditor 
+          [(ngModel)]="tentangKami"
+          [config]="{ 
+              extraPlugins: 'divarea', 
+              height: '400' ,
+             allowedContent: 'false'
+            }"></ckeditor>
+        </nb-card-body>
+        <nb-card-footer>
+            <button type="button" (click)="update()" class="btn btn-success">Send</button>
+        </nb-card-footer>
+      </nb-card>
